@@ -1,18 +1,39 @@
-let remeras = 900
-let buzo = 1400
-let botella = 600
-let calleras = 1200
+let Producto1 = remera
+let Producto2 = buzo
+let Producto3 = botella
+let Producto4 = calleras
 
-let bienvenida = prompt('Hola, ingrese su nombre.')
+let PrecioRemera = 900
+let PrecioBuzo = 1400
+let PrecioBotella = 600
+let PrecioCalleras = 1200
 
-let usuario = "Hola" + " " + bienvenida + ", a continuación eliga su producto a comprar."
-alert(usuario)
+let usuario = prompt('Hola, ingrese su nombre.');
+
+let bienvenida = "Hola" + " " + usuario + ", a continuación eliga su producto a comprar.";
+alert(bienvenida);
 
 let productosYPrecios = "Remeras $900 , Buzo $1400 , Botella $600 , Calleras $1200.";
 
-alert(productosYPrecios)
+alert(productosYPrecios);
 
-prompt()
+let producto = prompt('¡Ingrese un producto, por favor!.');
+
+if (producto == remera){
+  alert('comprastre una remera');
+
+} else if (producto == buzo){
+  alert('comprastre un buzo');
+
+} else if (producto == botella){
+  alert('comprastre una botella');
+
+} else if (producto == calleras){
+  alert('comprastre unas calleras');
+
+} else(producto)
+
+
 
 
 
