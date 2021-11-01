@@ -3,19 +3,26 @@
 let saludo = "Alejandro" + " " + apellido + " " + "buen dia";
 alert (saludo);*/
 
+
 // SEGUNDO DESAFIO
-let usuarioNumero = prompt('ingrese Un numero');
+// let usuarioNumero = prompt('ingrese Un numero');
 
-if (usuarioNumero > 1000){
-  alert("ingresaste un numero mayor a mil");
-} else(usuarioNumero < 1000);{
-  alert("Ayy!! perdiste, tenias que poner un numero mayor a mil");
-}
+// if (usuarioNumero > 1000){
+//   alert("ingresaste un numero mayor a mil");
+// } else(usuarioNumero < 1000);{
+//   alert("Ayy!! perdiste, tenias que poner un numero mayor a mil");
+// }
 
 
-let saludo = "hola" ;
-let palabraUsuario = prompt('Salude por favor');
+// let saludo = "hola" ;
+// let palabraUsuario = prompt('Salude por favor');
 
-if (palabraUsuario === saludo){
-  console.log("El usuario a saludado");
-}
+// if (palabraUsuario === saludo){
+//   console.log("El usuario a saludado");
+// }
+
+
+// TERCER DESAFIO
+const adivinaDivinador = 44
+
+for  i <1)
