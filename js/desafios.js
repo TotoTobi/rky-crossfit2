@@ -22,7 +22,49 @@ alert (saludo);*/
 // }
 
 
+<<<<<<< HEAD
 // TERCER DESAFIO
 const adivinaDivinador = 44
 
 for  i <1)
+=======
+<<<<<<< Updated upstream
+let saludo = "hola" ;
+let palabraUsuario = prompt('Salude por favor');
+
+if (palabraUsuario === saludo){
+  console.log("El usuario a saludado");
+}
+=======
+// TERCER DESAFIO
+// let producto = prompt('¡Ingrese el numero de su producto a comprar, por favor!.');
+
+// switch (producto) {
+//   case '1':
+//     alert('Gracias por tu compra. Acabas de Comprar una remera.');
+//   break;
+
+//   case '2':
+//     alert('Gracias por tu compra. Acabas de Comprar un Buzo de RKY.');
+//     break;
+  
+//   case '3':
+//     alert('Gracias por tu compra. Acabas de Comprar una botella de RKY.');
+//     break;
+
+//   case '4':
+//     alert('Gracias por tu compra. Acabas de Comprar un par de calleras.');
+//     break;
+
+//   default:
+//     alert('No comprastre ningun producto, por favor volve a cargar la pagina para poder realizar una compra si asi lo desea. Muchas Gracias');  
+//     break;
+// }
+
+// CUARTO DESAFIO
+
+const seleccionDelUsuario = () => {
+    const productos = numm
+}
+>>>>>>> Stashed changes
+>>>>>>> Pruebas
