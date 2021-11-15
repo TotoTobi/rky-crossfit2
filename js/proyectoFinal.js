@@ -16,18 +16,32 @@ const vuelto = (a, b) => {
   return a - b;
 }
 
-function compra() {
+
+
+
+function compra(Productos) {
   let mensaje = '';
   let precio = 0;
-  let producto = prompt('¡Ingrese el numero de su producto a comprar, por favor!.');
+  let seleccion = prompt('¡Ingrese el numero de su producto a comprar, por favor!.');
   let cantidad = Number(prompt('Ingrese su cantidad que desee comprar'));
   let dineroIngresado = Number(prompt('¿Con cuanto desea abonar?'));
+//   class Productos{
+//   constructor(nombre, Precio){
+//      this.nombre = nombre;
+//      this.precio = precio;
+//    }
+//  }
+
+// const object1 = new Productos(remera/s);
+// const object2 = new Productos(buzo/s)
+// const object3 = new Productos(botella/s);
+// const object4 = new Productos(calleras/s);
 
   switch (producto) {
     case '1':
       precio = 900; 
       precio = precioFinal(precio, cantidad);
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} remera/s de RKY. Y tu monto a pagar a pagar es  $${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad}  de RKY. Y tu monto a pagar a pagar es ${precio}`;
       break;
 
     case '2':
@@ -53,16 +67,12 @@ function compra() {
       break;
   }
   alert(mensaje);
- 
-
-  
 }
 
 compra()
 
 
-
-
-
-
-
+// const object1 = new Productos(remera/s, $900);
+// const object2 = new Productos(buzo/s, $1400)
+// const object3 = new Productos(botella/s, $600);
+// const object4 = new Productos(calleras/s, $1200);
