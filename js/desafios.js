@@ -22,20 +22,6 @@ alert (saludo);*/
 // }
 
 
-<<<<<<< HEAD
-// TERCER DESAFIO
-const adivinaDivinador = 44
-
-for  i <1)
-=======
-<<<<<<< Updated upstream
-let saludo = "hola" ;
-let palabraUsuario = prompt('Salude por favor');
-
-if (palabraUsuario === saludo){
-  console.log("El usuario a saludado");
-}
-=======
 // TERCER DESAFIO
 // let producto = prompt('¡Ingrese el numero de su producto a comprar, por favor!.');
 
@@ -61,10 +47,38 @@ if (palabraUsuario === saludo){
 //     break;
 // }
 
-// CUARTO DESAFIO
 
-const seleccionDelUsuario = () => {
-    const productos = numm
+// DESAFIO DE DOM
+let sectionArticulos = document.querySelector("#articulosTitulo");
+
+sectionArticulos.innerHTML += `<h1>NUESTRA TIENDA</h1>`;
+
+const productos = [
+  {
+    id: 1, nombre:"Remera de rky, N° de Producto: 1.", precio: 1500
+  },
+
+  {
+    id: 2, nombre:"Buzo Gris de rky, N° de Producto: 2.", precio: 4500
+  },
+
+  {
+    id: 3, nombre:"Botella de rky, N° de Producto: 3.", precio: 1000
+  },
+
+  {
+    id: 4, nombre:"Calleras gimnasticas de cuero, N° de Producto: 4.", precio: 1000
+  },
+];
+
+let muestrario = document.querySelector("#muestrario");
+
+for (var i = 0; i < productos.length; i++) {
+  muestrario.innerHTML +=` 
+  <article>
+    <h4>${productos[i].nombre}</h4>
+    <p>${productos[i].precio}</p>
+    <button> COMPRAR </button>
+  </article>
+  `
 }
->>>>>>> Stashed changes
->>>>>>> Pruebas

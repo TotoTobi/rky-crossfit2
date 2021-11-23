@@ -6,37 +6,35 @@ function saludo () {
 
 saludo()
 
-let productosYPrecios = alert('1. Remeras $1500 , 2. Buzo $4500 , 3. Botella $1000 , 4. Calleras $1000.');
+const productos = [
+  {
+    id: 1, nombre:"Remera de rky, N° de Producto: 1.", precio: 1500
+  },
+
+  {
+    id: 2, nombre:"Buzo Gris de rky, N° de Producto: 2.", precio: 4500
+  },
+
+  {
+    id: 3, nombre:"Botella de rky, N° de Producto: 3.", precio: 1000
+  },
+
+  {
+    id: 4, nombre:"Calleras gimnasticas de cuero, N° de Producto: 4.", precio: 1000
+  },
+];
+
+for(let muestrario of productos){
+  alert(`Nuestro producto ${muestrario.nombre} Y tiene un costo de $ ${muestrario.precio}.`)
+}
 
 const precioFinal = (a, b) => {
-   return a * b;
+  return a * b;
 };
 
 const vuelto = (a, b) => {
   return a - b;
 };
-
-const productos = [
-  {
-    id: 1, nombre:"remera blanca de rky", precio: 1500
-  },
-
-  {
-    id: 2, nombre:"buzo Gris de rky", precio: 4500
-  },
-
-  {
-    id: 3, nombre:"botella de rky", precio: 1000
-  },
-
-  {
-    id: 4, nombre:"calleras gimnasticas de cuero", precio: 1000
-  },
-];
-
-function newFunction() {
-  return `1`;
-}
 
 function compra() {
   let mensaje = '';
@@ -49,23 +47,23 @@ function compra() {
     case '1':
       precio = 1500; 
       precio = precioFinal(precio, cantidad);
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${1} RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} remera(s) RKY. Y tu monto a pagar a pagar es ${precio}`;
       break;
 
     case '2':
       precio = 4500;
       precio = precioFinal(precio, cantidad)
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${2} de RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} buzo(s) de RKY. Y tu monto a pagar a pagar es ${precio}`;
       break;
 
     case '3':
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${3} botella/s de RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} botella(s) botella/s de RKY. Y tu monto a pagar a pagar es ${precio}`;
       precio = 600;
       precio = precioFinal(precio, cantidad)
       break;
 
     case '4':
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${4} de RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} callera(s) de cuero de RKY. Y tu monto a pagar a pagar es ${precio}`;
       precio = 1200;
       precio = precioFinal(precio, cantidad)
       break;
@@ -78,3 +76,7 @@ function compra() {
 }
 
 compra()
+
+
+// DOM
+
