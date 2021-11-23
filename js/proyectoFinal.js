@@ -6,58 +6,66 @@ function saludo () {
 
 saludo()
 
-let productosYPrecios = alert('1. Remeras $900 , 2. Buzo $1400 , 3. Botella $600 , 4. Calleras $1200.');
+let productosYPrecios = alert('1. Remeras $1500 , 2. Buzo $4500 , 3. Botella $1000 , 4. Calleras $1000.');
 
 const precioFinal = (a, b) => {
    return a * b;
-}
+};
 
 const vuelto = (a, b) => {
   return a - b;
+};
+
+const productos = [
+  {
+    id: 1, nombre:"remera blanca de rky", precio: 1500
+  },
+
+  {
+    id: 2, nombre:"buzo Gris de rky", precio: 4500
+  },
+
+  {
+    id: 3, nombre:"botella de rky", precio: 1000
+  },
+
+  {
+    id: 4, nombre:"calleras gimnasticas de cuero", precio: 1000
+  },
+];
+
+function newFunction() {
+  return `1`;
 }
 
-
-
-
-function compra(Productos) {
+function compra() {
   let mensaje = '';
   let precio = 0;
-  let seleccion = prompt('¡Ingrese el numero de su producto a comprar, por favor!.');
-  let cantidad = Number(prompt('Ingrese su cantidad que desee comprar'));
+  let producto = prompt('¡Ingrese el numero de su producto a comprar, por favor!.');
+  let cantidad = Number(prompt('Ingrese su cantidad que desee comprar.'));
   let dineroIngresado = Number(prompt('¿Con cuanto desea abonar?'));
-//   class Productos{
-//   constructor(nombre, Precio){
-//      this.nombre = nombre;
-//      this.precio = precio;
-//    }
-//  }
 
-// const object1 = new Productos(remera/s);
-// const object2 = new Productos(buzo/s)
-// const object3 = new Productos(botella/s);
-// const object4 = new Productos(calleras/s);
-
-  switch (producto) {
+  switch (producto){
     case '1':
-      precio = 900; 
+      precio = 1500; 
       precio = precioFinal(precio, cantidad);
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad}  de RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${1} RKY. Y tu monto a pagar a pagar es ${precio}`;
       break;
 
     case '2':
-      precio = 1400;
+      precio = 4500;
       precio = precioFinal(precio, cantidad)
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} buzo/s de RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${2} de RKY. Y tu monto a pagar a pagar es ${precio}`;
       break;
 
     case '3':
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} botella/s de RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${3} botella/s de RKY. Y tu monto a pagar a pagar es ${precio}`;
       precio = 600;
       precio = precioFinal(precio, cantidad)
       break;
 
     case '4':
-      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} callera/s de RKY. Y tu monto a pagar a pagar es ${precio}`;
+      mensaje = `Gracias por tu compra. Acabas de Comprar ${cantidad} ${4} de RKY. Y tu monto a pagar a pagar es ${precio}`;
       precio = 1200;
       precio = precioFinal(precio, cantidad)
       break;
@@ -70,9 +78,3 @@ function compra(Productos) {
 }
 
 compra()
-
-
-// const object1 = new Productos(remera/s, $900);
-// const object2 = new Productos(buzo/s, $1400)
-// const object3 = new Productos(botella/s, $600);
-// const object4 = new Productos(calleras/s, $1200);
