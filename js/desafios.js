@@ -55,19 +55,19 @@ sectionArticulos.innerHTML += `<h1>NUESTRA TIENDA</h1>`;
 
 const productos = [
   {
-    id: 1, nombre:"Remera de rky, N° de Producto: 1.", precio: 1500
+    id: 1, nombre:"Remera de rky, N° de Producto: 1.", precio: `$1500`
   },
 
   {
-    id: 2, nombre:"Buzo Gris de rky, N° de Producto: 2.", precio: 4500
+    id: 2, nombre:"Buzo Gris de rky, N° de Producto: 2.", precio: `$4500`
   },
 
   {
-    id: 3, nombre:"Botella de rky, N° de Producto: 3.", precio: 1000
+    id: 3, nombre:"Botella de rky, N° de Producto: 3.", precio: `$1000`
   },
 
   {
-    id: 4, nombre:"Calleras gimnasticas de cuero, N° de Producto: 4.", precio: 1000
+    id: 4, nombre:"Calleras gimnasticas de cuero, N° de Producto: 4.", precio: `$1000`
   },
 ];
 
@@ -78,7 +78,15 @@ for (var i = 0; i < productos.length; i++) {
   <article>
     <h4>${productos[i].nombre}</h4>
     <p>${productos[i].precio}</p>
-    <button> COMPRAR </button>
-  </article>
+    <button id="botonDeCompra"> COMPRAR </button>
+    </article>
   `
-}
+};
+
+let carrito = [];
+
+document.getElementById("botonDeCompra").onclick = function() { 
+  carrito.push
+  console.log(carrito)
+  alert("Compraste un producto de nuestra tienda, por favor ir al box para retirarlo.")
+};
